@@ -1,0 +1,208 @@
+body {
+      background-color: #343233;
+}
+
+
+.hero-logo-circles {
+  width:366px;
+  height:366px;
+  padding:0;
+  margin:0;
+  display: block;
+}
+
+
+@-webkit-keyframes spin1 {
+0% { transform-origin: center; -webkit-transform: rotate(0deg);}
+100% {transform-origin: center; -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin1 {
+0% {transform-origin: center; -moz-transform: rotate(0deg);}
+100% {transform-origin: center; -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin1 {
+0% {transform-origin: center; -o-transform: rotate(0deg);}
+100% {transform-origin: center; -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin1 {
+0% {transform-origin: center; -ms-transform: rotate(0deg);}
+100% {transform-origin: center; -ms-transform: rotate(360deg);}
+}
+@-keyframes spin1 {
+0% {transform-origin: center; transform: rotate(0deg);}
+100% {transform-origin: center; transform: rotate(360deg);}
+}
+
+
+.blue1 {
+  display: block;
+  background-image:url("../images/blue1.svg");
+  position: absolute;
+  margin:0;
+  padding:0;
+  width:366px;
+  height:366px;
+  background-size:100%;
+  background-repeat:no-repeat;
+  -webkit-animation: spin1 25s infinite linear;
+-moz-animation: spin1 25s infinite linear;
+-o-animation: spin1 25s infinite linear;
+-ms-animation: spin1 25s infinite linear;
+animation: spin1 25s infinite linear;
+  /* // iteration; // duration; timing // */
+}
+
+  .blue2 {
+    background-image:url("../images/blue2.svg");
+    position: absolute;
+    display: block;
+    margin:0;
+    padding:0;
+    width:366px;
+    height:366px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    -webkit-animation: spin1 32s infinite linear;
+  -moz-animation: spin1 32s infinite linear;
+  -o-animation: spin1 32s infinite linear;
+  -ms-animation: spin1 32s infinite linear;
+  animation: spin1 32s infinite linear;
+  }
+
+  .green1 {
+    background-image:  url("../images/green1.svg");
+    position: absolute;
+    display: block;
+    margin:0;
+    padding:0;
+    width:366px;
+    height:366px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    -webkit-animation: spin1 42s infinite linear;
+  -moz-animation: spin1 42s infinite linear;
+  -o-animation: spin1 42s infinite linear;
+  -ms-animation: spin1 42s infinite linear;
+  animation: spin1 42s infinite linear;
+  }
+
+  .green2 {
+    display: block;
+  background-image:  url("../images/green2.svg");
+  position: absolute;
+  margin:0;
+  padding:0;
+  width:366px;
+  height:366px;
+  background-size:100%;;
+  background-repeat:no-repeat;
+  -webkit-animation: spin1 32s infinite linear;
+-moz-animation: spin1 32s infinite linear;
+-o-animation: spin1 32s infinite linear;
+-ms-animation: spin1 32s infinite linear;
+animation: spin1 32s infinite linear;
+  }
+
+  .yellow1 {
+    display: block;
+  background-image:  url("../images/yellow1.svg");
+  position: absolute;
+  margin:0;
+  padding:0;
+  width:366px;
+  height:366px;
+  background-size:100%;;
+  background-repeat:no-repeat;
+  -webkit-animation: spin1 47s infinite linear;
+-moz-animation: spin1 47s infinite linear;
+-o-animation: spin1 47s infinite linear;
+-ms-animation: spin1 47s infinite linear;
+animation: spin1 47s infinite linear;
+  }
+
+  .yellow2 {
+    display: block;
+    background-image:url("../images/yellow2.svg");
+    position: absolute;
+    margin:0;
+    padding:0;
+    width:366px;
+    height:366px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    -webkit-animation: spin1 22s infinite linear;
+  -moz-animation: spin1 22s infinite linear;
+  -o-animation: spin1 22s infinite linear;
+  -ms-animation: spin1 22s infinite linear;
+  animation: spin1 22s infinite linear;
+  }
+
+  .orange1 {
+    display: block;
+      background-image:url("../images/orange1.svg");
+      position: absolute;
+      width:366px;
+      height:366px;
+      margin:0;
+      padding:0;
+      background-size:100%;
+      background-repeat:no-repeat;
+      -webkit-animation: spin1 25s infinite linear;
+    -moz-animation: spin1 25s infinite linear;
+    -o-animation: spin1 25s infinite linear;
+    -ms-animation: spin1 25s infinite linear;
+    animation: spin1 25s infinite linear;
+
+  }
+
+  .orange2 {
+    display: block;
+  background-image:  url("../images/orange2.svg");
+  position: absolute;
+  margin:0;
+  padding:0;
+  width:366px;
+  height:366px;
+  background-size:100%;
+  background-repeat:no-repeat;
+  -webkit-animation: spin1 2s infinite linear;
+-moz-animation: spin1 2s infinite linear;
+-o-animation: spin1 2s infinite linear;
+-ms-animation: spin1 2s infinite linear;
+animation: spin1 2s infinite linear;
+  }
+
+  .red1 {
+    display: block;
+    background-image:url("../images/red1.svg");
+    position: absolute;
+    width:366px;
+    height:366px;
+    margin:0;
+    padding:0;
+
+    background-size:100%;
+    background-repeat:no-repeat;
+    -webkit-animation: spin1 22s infinite linear;
+  -moz-animation: spin1 22s infinite linear;
+  -o-animation: spin1 22s infinite linear;
+  -ms-animation: spin1 22s infinite linear;
+  animation: spin1 22s infinite linear;
+  }
+
+  .red2 {
+    display: block;
+    background-image:url("../images/red2.svg");
+    position: absolute;
+    margin:0;
+    padding:0;
+    width:366px;
+    height:366px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    -webkit-animation: spin1 17s infinite linear;
+  -moz-animation: spin1 17s infinite linear;
+  -o-animation: spin1 17s infinite linear;
+  -ms-animation: spin1 17s infinite linear;
+  animation: spin1 17s infinite linear;
+  }
