@@ -10,6 +10,7 @@ body {
   margin:0;
   display: block;
   margin-top:10%;
+  left:0;
 }
 
 
@@ -45,11 +46,11 @@ body {
   height:366px;
   background-size:100%;
   background-repeat:no-repeat;
-  -webkit-animation: spin1 25s infinite linear;
--moz-animation: spin1 25s infinite linear;
--o-animation: spin1 25s infinite linear;
--ms-animation: spin1 25s infinite linear;
-animation: spin1 25s infinite linear;
+  -webkit-animation: spin1 30s infinite linear;
+-moz-animation: spin1 30s infinite linear;
+-o-animation: spin1 30s infinite linear;
+-ms-animation: spin1 30s infinite linear;
+animation: spin1 30s infinite linear;
   /* // iteration; // duration; timing // */
 }
 
@@ -63,11 +64,11 @@ animation: spin1 25s infinite linear;
     height:366px;
     background-size:100%;
     background-repeat:no-repeat;
-    -webkit-animation: spin1 32s infinite linear;
-  -moz-animation: spin1 32s infinite linear;
-  -o-animation: spin1 32s infinite linear;
-  -ms-animation: spin1 32s infinite linear;
-  animation: spin1 32s infinite linear;
+    -webkit-animation: spin1 25s infinite linear;
+  -moz-animation: spin1 25s infinite linear;
+  -o-animation: spin1 25s infinite linear;
+  -ms-animation: spin1 25s infinite linear;
+  animation: spin1 25s infinite linear;
   }
 
   .green1 {
@@ -97,11 +98,11 @@ animation: spin1 25s infinite linear;
   height:366px;
   background-size:100%;;
   background-repeat:no-repeat;
-  -webkit-animation: spin1 32s infinite linear;
--moz-animation: spin1 32s infinite linear;
--o-animation: spin1 32s infinite linear;
--ms-animation: spin1 32s infinite linear;
-animation: spin1 32s infinite linear;
+  -webkit-animation: spin1 38s infinite linear;
+-moz-animation: spin1 38s infinite linear;
+-o-animation: spin1 38s infinite linear;
+-ms-animation: spin1 38s infinite linear;
+animation: spin1 38s infinite linear;
   }
 
   .yellow1 {
@@ -131,11 +132,11 @@ animation: spin1 47s infinite linear;
     height:366px;
     background-size:100%;
     background-repeat:no-repeat;
-    -webkit-animation: spin1 22s infinite linear;
-  -moz-animation: spin1 22s infinite linear;
-  -o-animation: spin1 22s infinite linear;
-  -ms-animation: spin1 22s infinite linear;
-  animation: spin1 22s infinite linear;
+    -webkit-animation: spin1 27s infinite linear;
+  -moz-animation: spin1 27s infinite linear;
+  -o-animation: spin1 27s infinite linear;
+  -ms-animation: spin1 27s infinite linear;
+  animation: spin1 27s infinite linear;
   }
 
   .orange1 {
@@ -148,11 +149,11 @@ animation: spin1 47s infinite linear;
       padding:0;
       background-size:100%;
       background-repeat:no-repeat;
-      -webkit-animation: spin1 25s infinite linear;
-    -moz-animation: spin1 25s infinite linear;
-    -o-animation: spin1 25s infinite linear;
-    -ms-animation: spin1 25s infinite linear;
-    animation: spin1 25s infinite linear;
+      -webkit-animation: spin1 39s infinite linear;
+    -moz-animation: spin1 39s infinite linear;
+    -o-animation: spin1 39s infinite linear;
+    -ms-animation: spin1 39s infinite linear;
+    animation: spin1 39s infinite linear;
 
   }
 
@@ -166,11 +167,11 @@ animation: spin1 47s infinite linear;
   height:366px;
   background-size:100%;
   background-repeat:no-repeat;
-  -webkit-animation: spin1 2s infinite linear;
--moz-animation: spin1 2s infinite linear;
--o-animation: spin1 2s infinite linear;
--ms-animation: spin1 2s infinite linear;
-animation: spin1 2s infinite linear;
+  -webkit-animation: spin1 6s infinite linear;
+-moz-animation: spin1 6s infinite linear;
+-o-animation: spin1 6s infinite linear;
+-ms-animation: spin1 6s infinite linear;
+animation: spin1 6s infinite linear;
   }
 
   .red1 {
@@ -213,12 +214,12 @@ animation: spin1 2s infinite linear;
     margin:0;
     text-align:center;
     display: block;
+    background-color: #584b4f;
       }
 
   .container {
 
       width:100%;
-      margin:0;
 
   }
 
@@ -242,4 +243,9 @@ animation: spin1 2s infinite linear;
     position:relative;
     bottom:15%;
     left:15%;
+  }
+
+  .nutrienttable {
+    width:100%;
+    color:white;
   }
