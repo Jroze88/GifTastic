@@ -1,54 +1,75 @@
-<html>
+<html lang-=en>
 <head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://developer.edamam.com/attribution/badge.js"></script>
-  <script src="assets/javascript/javascript.js"></script>
-</head>
-<body>
-  <nav class="top-bar topbar">
-    <h1>Nutrition Reactor</h1><br>
-        <p>Nutritional Component Food Breakdown</p>
-</nav>
-<div class= "container">
-
-  <div class="mainbody row">
-    <span class="graphic col-6">
-                    <div class="hero-logo-circles">
-                      <div class="blue1 blue1-rotate"></div>
-                      <div class="blue2"></div>
-                      <div class="red1"></div>
-                      <div class="red2"></div>
-                      <div class="yellow1"></div>
-                      <div class="yellow2"></div>
-                      <div class="orange1"></div>
-                      <div class="orange2"></div>
-                      <div class="green1"></div>
-                      <div class="green2"></div>
-                  </div>
-                </span>
-      <span class="col-6 input">
-          <form class="usersearch">
-        <input class="foodname" name="input" type="text"><br>
-        <!-- <input class="foodserving" name="input" type="text"> -->
-        <button class="submit">Search</button>
-        </form>
-      </span>
-      <table class="nutrienttable">
-        <tr>
-          <th>Nutrient</th> 
-          <th>Daily Percent</th>
-          <th>Content (grams)</th>
-        </tr>
-
-      </table>
+        <meta charset="UTF-8">
+        <title>Reaction Gif Library</title>
       
-      <div class="bottombar row">
-        <div id="edamam-badge" data-color="white"></div>
-      </div>
+        
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+              <link rel="stylesheet" href="assets/css/style.css">
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src= "assets/javascript/javascript.js"></script>
 
-</div>
+</head>
+<nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Reaction Gifs!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Reset <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link disabled" href="#">Clear</a>
+            <a class="nav-item nav-link savedstuff disabled" href="#">Favorites</a>
+          </div>
+        </div>
+      </nav>
+<body class="container bg">
+
+    <div class="buttons">
+        <div class="buttonarea">
+
+                <button class="coolbeans searchbutton" data-mood="sad">Sad</button>
+
+                <button class="coolbeans searchbutton" data-mood="happy">Happy</button>
+
+                <button class="coolbeans searchbutton" data-mood="laughing">Hahaha!</button>
+
+                <button class="coolbeans searchbutton" data-mood="cheers">Cheers</button>
+
+                <button class="coolbeans searchbutton" data-mood="wtf">WTF</button>
+
+                <button class="coolbeans searchbutton" data-mood="ew">Ew</button>
+
+                <button class="coolbeans searchbutton" data-mood="concerned">Concerned</button>
+
+                <button class="coolbeans searchbutton" data-mood="shaq">Shaquille O'Neal</button>
+
+                <button class="coolbeans searchbutton" data-mood="slowclap">Slow Clap</button>
+
+                <button class="coolbeans searchbutton" data-mood="eyeroll">Eye Roll</button>
+
+                <button class="coolbeans searchbutton" data-mood="shaq">Shaquille O'Neal</button>
+
+                <button class="coolbeans searchbutton" data-mood="reaction">Random</button>
+        </div>
+                <span class="add">
+                    <form class="custombutton">
+                            <input placeholder="Make your own button!" class="addbutton" name="input" type="text">
+                            <button type="submit" class="addgif">&#10003;Submit</button>
+                    </form>
+                </span>
+
+        </div>
+
+
+    <span id="reactiongif" class="col-6">
+        </span>
+
+
+
+
 
 </body>
 </html>
+  
