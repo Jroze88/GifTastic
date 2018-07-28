@@ -2,6 +2,8 @@
     $(document).ready(function () {
 
         // 'https://api.edamam.com/api/food-database/parser?ingr=red%20apple&app_id={your app_id}&app_key={your app_key}'
+        
+        
 
             if ((localStorage.getItem("favorites")) !== null) {
                 $(".savedstuff").removeClass("disabled")
@@ -36,6 +38,7 @@
 
         })
 
+
         searchAPI = function() {
             
 
@@ -49,7 +52,8 @@
             
             $.ajax({
               url: queryURL,
-              method: "GET"
+              method: "GET",
+              
             })
               
               .then(function(response) {
@@ -73,13 +77,22 @@
                   reactionDIV.append(reactionGIF); ///attach gif to the span /////
 
 
+                              if (results[k].trending_datetime.indexOf("00:00:00") === -1)  {
+                                  trendingTime = "Lame."
+                              }
+                              else {
+                                  trendingTime = results[k].trending_datetime;
+                              }
+
 
                   var infoDIV = $("<div>"); /////put all the info for the gif into a div/////
                   infoDIV.attr("class", "infobox")
-                  var p = $("<span>").html("<p><strong>Title: </strong>" + results[k].title + "<br>" + "<strong>Rating: </strong>" + results[k].rating + "<br>" + "<strong>Last Trending: </strong>" + results[k].trending_datetime + "</p>");
-                  var s = $("<a>").attr("Href", results[k].url).text("Link");
+                  var p = $("<span>").html("<p><strong>Title: </strong>" + results[k].title + "<br>" + "<strong>Rating: </strong>" + results[k].rating + "<br>" + "<strong>Last Trending: </strong>" + trendingTime + "</p>");
+                  var s = $("<a>").attr("href", results[k].images.fixed_height.url).text("Right-Click, Download GIF");
                   var q = $("<button>").attr("class", "favorite btn-sm").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add to Favorites")
+                  
 
+                    
 
 
                   infoDIV.append(p);
@@ -89,7 +102,7 @@
                   reactionDIV.append(infoDIV) /////put the info div into span////
       
                   $("#reactiongif").prepend(reactionDIV); ////attach the span to the DOM////
-                  $(document).on('click','.favorite', addFavorite)
+                  $(document).on('click','.favorite', addFavorite);
                 }
               });
          
@@ -113,7 +126,7 @@
             var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
               reaction + "+reaction" + "&api_key=dFNnGXb85LkyR37i8qf9UDCN9Rt8z5Ym&rating=r&limit=200";
       
-            
+            jQuery.support.corse = true;
             $.ajax({
               url: queryURL,
               method: "GET"
@@ -140,14 +153,21 @@
                   reactionDIV.append(reactionGIF); ///attach gif to the span /////
 
 
+                              if (results[k].trending_datetime.indexOf("00:00:00") === -1)  {
+                                  trendingTime = "Lame."
+                              }
+                              else {
+                                  trendingTime = results[k].trending_datetime;
+                              }
+
 
                   var infoDIV = $("<div>"); /////put all the info for the gif into a div/////
                   infoDIV.attr("class", "infobox")
-                  var p = $("<span>").html("<p><strong>Title: </strong>" + results[k].title + "<br>" + "<strong>Rating: </strong>" + results[k].rating + "<br>" + "<strong>Last Trending: </strong>" + results[k].trending_datetime + "</p>");
-                  var s = $("<a>").attr("Href", results[k].url).text("Link");
+                  var p = $("<span>").html("<p><strong>Title: </strong>" + results[k].title + "<br>" + "<strong>Rating: </strong>" + results[k].rating + "<br>" + "<strong>Last Trending: </strong>" + trendingTime + "</p>");
+                  var s = $("<a>").attr("href", results[k].images.fixed_height.url).text("Right-Click, Download GIF");
                   var q = $("<button>").attr("class", "favorite btn-sm").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add to Favorites")
-                  
 
+                    
 
 
                   infoDIV.append(p);
@@ -157,7 +177,7 @@
                   reactionDIV.append(infoDIV) /////put the info div into span////
       
                   $("#reactiongif").prepend(reactionDIV); ////attach the span to the DOM////
-                  $(document).on('click','.favorite', addFavorite)
+                  $(document).on('click','.favorite', addFavorite);
                 }
               });
           })
@@ -165,6 +185,9 @@
          
           addFavorite = function () {
 
+                $(this).css("background-image", 'url(\'assets/images/check.png\')');
+                $(this).text(" ")
+                $(this).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Added");
                 $(".savedstuff").removeClass("disabled");
                 var gif = $(this).parent().parent();
                 var gif = $('<div>').append($(gif).clone()).html();
